@@ -157,14 +157,24 @@ h2 {
 }
 
 .robotics {
-  padding: 10px;
+  padding: 24px;
   place-self: center;
   display: flex;
   align-items: center;
 }
 
 .robotics-header-wrapper {
-  width: 300px;
+  width: 50%;
+}
+
+.robotics-header-wrapper h1 {
+  font-size: 24px;
+  background: #a62985;
+  background: -webkit-linear-gradient(to right, #a62985 0%, #032973 100%);
+  background: -moz-linear-gradient(to right, #a62985 0%, #032973 100%);
+  background: linear-gradient(to right, #a62985 0%, #032973 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .robotics-img {
