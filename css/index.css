@@ -19,14 +19,14 @@
 }
 
 .cosmology {
-  height: 33vh;
+  height: 50vh;
   color: white;
   background-image: url("../images/cosmology/index-phone-cosmology.jpg");
   background-size: cover;
   /* background-position: right; */
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
+  align-items: center;
   justify-content: center;
 }
 
