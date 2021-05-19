@@ -19,7 +19,7 @@
 
 @font-face {
   font-family: "Zen Dots";
-  src: url("../font/Microgramma-D-Extended.ttf") format("truetype");
+  src: url("../font/ZenDots-Regular.ttf") format("truetype");
 }
 
 body {
@@ -31,12 +31,12 @@ body {
 }
 
 h1 {
-  font-weight: 700;
+  font-weight: 500;
   font-size: 24px;
 }
 
 h2 {
-  /* font-weight: 500; */
+  font-weight: 400;
   font-size: 18px;
   line-height: 22px;
 }
