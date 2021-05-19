@@ -227,3 +227,15 @@ h2 {
   background-image: url("/images/night-at-the-museum/night-at\ the\ museum-family.jpg");
   background-size: cover;
 }
+
+footer {
+  background-color: #f7f7f7;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+footer > * {
+  margin-bottom: 20px;
+}
