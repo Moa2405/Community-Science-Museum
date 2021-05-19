@@ -58,26 +58,24 @@
 }
 
 .cosmology {
+  overflow: hidden;
   padding: 24px;
   color: white;
   background-image: url("../images/cosmology/index-phone-cosmology.jpg");
   background-size: cover;
-  /* background-position: right; */
-  display: flex;
-  /* flex-direction: column; */
 }
 
 .cosmology-content {
-  margin: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  height: 100%;
 }
 
 .cosmology-header {
-  margin: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .cosmology-header h1,
@@ -100,6 +98,7 @@ h2 {
 .imax-content {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 h1.imax-header,
@@ -112,9 +111,14 @@ h1.imax-header {
   font-size: 50px;
 }
 h2.imax-subheader {
-  margin-top: -21px;
-  font-size: 24px;
-  letter-spacing: 5px;
+  font-weight: 500;
+  margin-top: -22px;
+  font-size: 20px;
+  letter-spacing: 8px;
+}
+h3.imax-movie {
+  font-family: var(--cosmology-header), sans-serif;
+  font-size: 20px;
 }
 
 .three-d-experience {
@@ -129,7 +133,7 @@ h2.imax-subheader {
   height: 170px;
   width: 170px;
   /* left: 26px; */
-  margin-left: 26px;
+  margin-left: 10px;
 }
 
 .space-craft {
