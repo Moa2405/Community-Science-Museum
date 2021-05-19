@@ -17,6 +17,11 @@
   src: url("../font/Microgramma-D-Extended.ttf") format("truetype");
 }
 
+@font-face {
+  font-family: "Zen Dots";
+  src: url("../font/Microgramma-D-Extended.ttf") format("truetype");
+}
+
 body {
   font-family: var(--primary-font), Arial, Helvetica, sans-serif;
   min-height: 100vh;
@@ -31,8 +36,9 @@ h1 {
 }
 
 h2 {
-  font-weight: 500;
+  /* font-weight: 500; */
   font-size: 25px;
+  line-height: 22px;
 }
 
 header .active {

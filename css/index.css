@@ -27,15 +27,14 @@
   background-size: cover;
   /* background-position: right; */
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  /* flex-direction: column; */
 }
 
 .cosmology-content {
   margin: auto;
   display: flex;
   flex-direction: column;
+  align-items: center;
   justify-content: space-evenly;
   height: 100%;
 }
@@ -54,13 +53,22 @@ h2 {
   -webkit-text-fill-color: transparent;
 }
 
+.imax {
+  display: flex;
+}
+
+.imax-content {
+  justify-self: center;
+}
+
 .imax .imax-content h1,
 h2 {
   font-family: var(--imax-font), sans-serif;
 }
 
-.imax {
-  display: flex;
+.imax .imax-content h2 {
+  font-size: 24px;
+  margin-top: -13px;
 }
 
 .three-d-experience {
@@ -71,10 +79,11 @@ h2 {
 .kids-fun {
   background-image: url("/images/cosmology/kids-fun-imax.jpg");
   background-size: cover;
-  position: absolute;
+  /* position: absolute; */
   height: 170px;
   width: 170px;
-  left: 26px;
+  /* left: 26px; */
+  margin-left: 26px;
 }
 
 .space-craft {
@@ -85,15 +94,29 @@ h2 {
   left: 170px;
   position: absolute;
   top: -150px;
-  animation: roll 20s infinite;
+  animation: space-craft-rotate 20s infinite;
   transform: rotate(30deg);
 }
 
-@keyframes roll {
+@keyframes space-craft-rotate {
   0% {
     transform: rotate(0);
   }
   100% {
     transform: rotate(360deg);
   }
+}
+
+.grid-section {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+}
+
+.grid-card {
+  place-self: center;
+  background-color: #13f0d7;
+  height: 357px;
+  width: 357px;
 }

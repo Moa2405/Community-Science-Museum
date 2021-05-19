@@ -18,3 +18,9 @@
     padding: 6px;
   }
 }
+
+@media (min-width: 600px) {
+  .three-d-experience {
+    display: block;
+  }
+}
