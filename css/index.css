@@ -115,8 +115,61 @@ h2 {
 }
 
 .grid-card {
+  position: relative;
   place-self: center;
-  background-color: #13f0d7;
+  background-color: black;
   height: 357px;
   width: 357px;
+}
+
+.grid-card-content {
+  position: absolute;
+  bottom: 0px;
+  padding: 15px;
+  background-color: rgba(247, 247, 247, 0.88);
+}
+
+.evolution {
+  background-image: url("/images/index-grid/dinoseur-trimed.jpg");
+  background-size: cover;
+}
+.explore {
+  background-image: url("/images/index-grid/vr-girl.jpg");
+  background-size: cover;
+}
+.biology {
+  background-image: url("/images/index-grid/biology-trimed.jpg");
+  background-size: cover;
+}
+.gift-shop {
+  background-image: url("/images/index-grid/gift-shop-trimed.jpg");
+  background-size: cover;
+}
+.ecology {
+  background-image: url("/images/index-grid/ecology-trimed.jpg");
+  background-size: cover;
+}
+
+.robotics-night {
+  width: 100vw;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.robotics {
+  padding: 10px;
+  place-self: center;
+  display: flex;
+  align-items: center;
+}
+
+.robotics-header-wrapper {
+  width: 300px;
+}
+
+.robotics-img {
+  background-image: url("/images/robotics&night/robot-trimed.png");
+  background-size: cover;
+  height: 360px;
+  width: 140px;
 }
