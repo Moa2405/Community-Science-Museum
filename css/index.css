@@ -58,7 +58,7 @@
 }
 
 .cosmology {
-  height: 33vh;
+  padding: 24px;
   color: white;
   background-image: url("../images/cosmology/index-phone-cosmology.jpg");
   background-size: cover;
@@ -76,6 +76,10 @@
   height: 100%;
 }
 
+.cosmology-header {
+  margin: 24px;
+}
+
 .cosmology-header h1,
 h2 {
   font-family: var(--cosmology-header), sans-serif;
@@ -88,6 +92,7 @@ h2 {
 }
 
 .imax {
+  margin: 24px;
   display: grid;
   grid-template-columns: 1fr;
 }
