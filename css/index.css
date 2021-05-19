@@ -11,13 +11,50 @@
 }
 
 .welcome-content {
-  margin-left: 10px;
-  margin-right: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.welcome-content h1 {
+  animation: header-opacity 4s;
+}
+
+@keyframes header-opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .welcome h2 {
   font-family: var(--primary-font), sans-serif;
   margin-bottom: 20px;
+  animation: sub-header-opacity 6s;
+}
+
+@keyframes sub-header-opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.cta-fade-in {
+  animation: sub-header-opacity 8s;
+}
+
+@keyframes sub-header-opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .cosmology {
@@ -234,6 +271,11 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+}
+
+footer i {
+  color: var(--purple);
+  margin-left: 20px;
 }
 
 footer > * {
