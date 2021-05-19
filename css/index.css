@@ -1,0 +1,97 @@
+.welcome {
+  margin-bottom: 30px;
+  color: white;
+  height: 33vh;
+  background-image: url("../images/welcome-index2.jpg");
+  background-size: cover;
+  background-position: right;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.welcome-content {
+}
+
+.welcome h2 {
+  font-family: var(--primary-font), sans-serif;
+  margin-bottom: 20px;
+}
+
+.cosmology {
+  height: 33vh;
+  color: white;
+  background-image: url("../images/cosmology/index-phone-cosmology.jpg");
+  background-size: cover;
+  /* background-position: right; */
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: center;
+}
+
+.cosmology-content {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 100%;
+}
+
+.cosmology-header h1,
+h2 {
+  font-family: var(--cosmology-header), sans-serif;
+}
+
+.cosmology-header h1 {
+  background: #13f0d7;
+  background: -webkit-linear-gradient(to right, #13f0d7 27%, #ffffff 100%);
+  background: -moz-linear-gradient(to right, #13f0d7 27%, #ffffff 100%);
+  background: linear-gradient(to right, #13f0d7 27%, #ffffff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.imax .imax-content h1,
+h2 {
+  font-family: var(--imax-font), sans-serif;
+}
+
+.imax {
+  display: flex;
+}
+
+.three-d-experience {
+  display: none;
+  position: relative;
+}
+
+.kids-fun {
+  background-image: url("/images/cosmology/kids-fun-imax.jpg");
+  background-size: cover;
+  position: absolute;
+  height: 170px;
+  width: 170px;
+  left: 26px;
+}
+
+.space-craft {
+  background-image: url("/images/cosmology/space-craft.png");
+  background-size: cover;
+  width: 240px;
+  height: 240px;
+  left: 170px;
+  position: absolute;
+  top: -150px;
+  animation: roll 20s infinite;
+  transform: rotate(30deg);
+}
+
+@keyframes roll {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

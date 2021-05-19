@@ -1,0 +1,13 @@
+a {
+  text-decoration: none;
+}
+
+header a {
+  color: black;
+}
+
+.cta-primary {
+  height: 37px;
+  width: 113px;
+  background-color: #13f0d7;
+}

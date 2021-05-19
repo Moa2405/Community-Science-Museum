@@ -1,0 +1,104 @@
+@import "imports/links.css";
+@import "imports/variables.css";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Space Quest";
+  src: url("../font/SpaceQuest-Xj4o.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Microgramma D Extended";
+  src: url("../font/Microgramma-D-Extended.ttf") format("truetype");
+}
+
+body {
+  font-family: var(--primary-font), Arial, Helvetica, sans-serif;
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  justify-content: center;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 35px;
+}
+
+h2 {
+  font-weight: 500;
+  font-size: 20px;
+}
+
+header .active {
+  text-decoration: underline;
+}
+
+header {
+  width: 100vw;
+  padding: 13px;
+  max-width: 1400px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  place-self: center;
+}
+
+.logo i {
+  color: var(--purple);
+  margin-right: 3px;
+}
+
+.logo h3 {
+  line-height: 17px;
+}
+
+.logo {
+  cursor: pointer;
+  display: flex;
+}
+
+nav {
+  font-weight: 500;
+  margin-left: 25px;
+  position: fixed;
+  background: var(--green);
+  top: 75px;
+  z-index: 10;
+  right: 0px;
+  transform: translateX(110%);
+  transition: 0.3s ease-in;
+}
+
+nav ul {
+  padding: 0px;
+}
+
+nav li {
+  display: block;
+  padding: 20px 30px;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+#hamburger-menu:checked ~ nav {
+  transform: translateX(0%);
+}
+
+.cta {
+  font-weight: 500;
+  color: black;
+  padding: 6px;
+  text-align: center;
+  display: inline-block;
+  height: 37px;
+  width: 113px;
+  background-color: var(--green);
+}

@@ -1,0 +1,20 @@
+@media (min-width: 600px) {
+  label {
+    display: none;
+  }
+
+  nav {
+    transform: translateX(0%);
+    position: static;
+    background-color: white;
+    justify-self: end;
+  }
+
+  nav ul {
+    display: flex;
+  }
+
+  nav li {
+    padding: 6px;
+  }
+}
