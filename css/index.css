@@ -58,7 +58,7 @@
 }
 
 .cosmology {
-  height: 50vh;
+  height: 33vh;
   color: white;
   background-image: url("../images/cosmology/index-phone-cosmology.jpg");
   background-size: cover;
@@ -88,21 +88,27 @@ h2 {
 }
 
 .imax {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr;
 }
 
 .imax-content {
-  justify-self: center;
+  display: flex;
+  flex-direction: column;
 }
 
-.imax .imax-content h1,
-h2 {
-  font-family: var(--imax-font), sans-serif;
+h1.imax-header,
+h2.imax-subheader {
+  font-family: var(--imax-font) Arial, Helvetica, sans-serif;
 }
 
-.imax .imax-content h2 {
+h1.imax-header {
+  font-size: 50px;
+}
+h2.imax-subheader {
+  margin-top: -21px;
   font-size: 24px;
-  margin-top: -13px;
+  letter-spacing: 5px;
 }
 
 .three-d-experience {
