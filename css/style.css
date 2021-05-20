@@ -101,7 +101,7 @@ input[type="checkbox"] {
 }
 
 .cta {
-  font-weight: 500;
+  font-weight: 600;
   color: black;
   padding: 6px;
   text-align: center;
@@ -109,4 +109,60 @@ input[type="checkbox"] {
   height: 37px;
   width: 113px;
   background-color: var(--green);
+  padding-top: 9px;
+}
+
+.site-header-backroud {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  width: 100vw;
+}
+
+.site-content {
+  max-width: 400px;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.site-content h2 {
+  font-weight: 600;
+  font-size: 1.2em;
+  margin: 1.5rem auto;
+}
+
+.site-content p {
+  margin: 1.1rem auto;
+}
+
+.grid-card {
+  place-self: center;
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  width: 300px;
+}
+
+footer {
+  background-color: #f7f7f7;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+footer i {
+  color: var(--purple);
+  margin-left: 20px;
+}
+
+footer > * {
+  margin-bottom: 20px;
 }

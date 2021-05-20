@@ -1,5 +1,5 @@
 .welcome {
-  padding: 10px;
+  padding: 25px;
   color: white;
   min-height: 33vh;
   background-image: url("../images/welcome-index2.jpg");
@@ -302,21 +302,4 @@ h3.imax-movie {
   left: 30px;
   background-image: url("/images/night-at-the-museum/night-at\ the\ museum-family.jpg");
   background-size: cover;
-}
-
-footer {
-  background-color: #f7f7f7;
-  padding: 24px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-}
-
-footer i {
-  color: var(--purple);
-  margin-left: 20px;
-}
-
-footer > * {
-  margin-bottom: 20px;
 }

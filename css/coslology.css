@@ -1,0 +1,97 @@
+.space {
+  background-image: url("/images/cosmology/background-space.jpg");
+  font-family: var(--cosmology-header), Arial, Helvetica, sans-serif;
+}
+
+.imax-header {
+  background-image: url("/images/cosmology/nasa-Q1p7bh3SHj8-unsplash.jpg");
+  font-family: var(--imax-font), Arial, Helvetica, sans-serif;
+  flex-direction: column;
+  height: 200px;
+}
+
+.imax-font-h1 {
+  font-size: 70px;
+  margin: 0px;
+}
+
+.imax-font-h2 {
+  margin-top: -10px;
+  margin-left: 20px;
+  letter-spacing: 20px;
+}
+
+.imax-wrapper {
+  max-width: 500px;
+  position: relative;
+}
+
+.imax-image {
+  position: absolute;
+  background-size: cover;
+}
+
+.kids {
+  background-image: url("/images/cosmology/kids-fun-imax.jpg");
+  height: 120px;
+  width: 120px;
+  top: 170px;
+  left: 50px;
+}
+
+.space-craft {
+  background-image: url("/images/cosmology/space-craft.png");
+  height: 120px;
+  width: 120px;
+  top: 150px;
+  left: 160px;
+  transform: rotate(22deg);
+}
+
+.margin-top {
+  margin-top: 3.5rem;
+}
+
+.grid-section-space {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.card-desktop {
+  display: none;
+}
+
+.grid-card-content {
+  height: 100%;
+}
+
+.card-phone {
+  color: white;
+  padding: 1.5rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card-phone h2 {
+  font-size: 30px;
+}
+
+.activities {
+  background-image: url("/images/cosmology/phone/space-fun-filter-blue.jpg");
+}
+
+.galaxy {
+  background-image: url("/images/cosmology/phone/galaxy-trimd.jpg");
+}
+
+.space-expeditions {
+  background-image: url("/images/cosmology/phone/rocket-trimd.jpg");
+}
+
+.solar-system {
+  background-image: url("/images/cosmology/phone/earth-color-filter.jpg");
+}
