@@ -1,7 +1,7 @@
 .welcome {
-  margin-bottom: 30px;
+  padding: 10px;
   color: white;
-  height: 33vh;
+  min-height: 33vh;
   background-image: url("../images/welcome-index2.jpg");
   background-size: cover;
   background-position: right;
@@ -13,7 +13,7 @@
 .welcome-content {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  /* align-items: center; */
 }
 
 .welcome-content h1 {
@@ -61,6 +61,7 @@
   overflow: hidden;
   padding: 24px;
   color: white;
+  background: black;
   background-image: url("../images/cosmology/index-phone-cosmology.jpg");
   background-size: cover;
 }
@@ -75,7 +76,7 @@
 .cosmology-header {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  /* align-items: center; */
 }
 
 .cosmology-header h1,
@@ -96,13 +97,14 @@ h2 {
 }
 
 .imax-content {
+  margin: 1.5rem;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  /* align-items: center; */
 }
 
-h1.imax-header,
-h2.imax-subheader {
+h1.imax-header {
+  margin: 0;
   font-family: var(--imax-font) Arial, Helvetica, sans-serif;
 }
 
@@ -110,15 +112,12 @@ h1.imax-header {
   font-weight: 700;
   font-size: 50px;
 }
-h2.imax-subheader {
-  font-weight: 500;
-  margin-top: -22px;
-  font-size: 20px;
-  letter-spacing: 8px;
-}
+
 h3.imax-movie {
-  font-family: var(--cosmology-header), sans-serif;
-  font-size: 20px;
+  /* font-family: var(--cosmology-header), sans-serif; */
+  margin-bottom: 1.5rem;
+  font-size: 25px;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .three-d-experience {
@@ -157,35 +156,51 @@ h3.imax-movie {
   }
 }
 
+.grid-sction-gradient-backround {
+  min-width: 100vw;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  background: linear-gradient(
+    90deg,
+    rgba(166, 41, 133, 1) 49%,
+    rgba(3, 41, 115, 1) 100%
+  );
+}
+
 .grid-section {
-  margin-top: 30px;
+  max-width: 1400px;
+  width: 100%;
+  padding: 10px;
+  margin: 30px auto 30px auto;
   display: grid;
   grid-template-columns: 1fr;
-  gap: 10px;
+  gap: 20px;
 }
 
 .grid-card {
   position: relative;
   place-self: center;
   background-color: black;
-  height: 357px;
-  width: 357px;
+  height: 280px;
+  width: 100%;
 }
 
 .grid-card-content {
   position: absolute;
   bottom: 0px;
   padding: 15px;
-  background-color: rgba(247, 247, 247, 0.88);
+  background-color: rgba(247, 247, 247, 0.75);
 }
 
 .evolution {
-  background-image: url("/images/index-grid/dinoseur-trimed.jpg");
+  background-image: url("../images/grid-sction/dinoseur-trimed.jpg");
   background-size: cover;
+  background-position: center;
 }
 .explore {
   background-image: url("/images/index-grid/vr-girl.jpg");
   background-size: cover;
+  background-position: top;
 }
 .biology {
   background-image: url("/images/index-grid/biology-trimed.jpg");
@@ -194,23 +209,27 @@ h3.imax-movie {
 .gift-shop {
   background-image: url("/images/index-grid/gift-shop-trimed.jpg");
   background-size: cover;
+  background-position: center;
 }
 .ecology {
   background-image: url("/images/index-grid/ecology-trimed.jpg");
   background-size: cover;
+  background-position: center;
 }
 
 .robotics-night {
+  margin: auto;
+  max-width: 1400px;
   width: 100vw;
   display: grid;
   grid-template-columns: 1fr;
 }
 
 .robotics {
-  padding: 24px;
   place-self: center;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .robotics-header-wrapper {
@@ -218,7 +237,6 @@ h3.imax-movie {
 }
 
 .robotics-header-wrapper h1 {
-  font-size: 24px;
   background: linear-gradient(to right, #a62985 0%, #032973 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -232,8 +250,14 @@ h3.imax-movie {
 }
 
 .night {
-  padding: 24px;
   background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.night-content-wrapper {
+  max-width: 400px;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -242,7 +266,6 @@ h3.imax-movie {
 }
 
 .night h1 {
-  font-size: 24px;
   background: linear-gradient(to right, #13f0d7 0%, #ffffff 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;

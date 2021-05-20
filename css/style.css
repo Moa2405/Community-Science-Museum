@@ -31,8 +31,10 @@ body {
 }
 
 h1 {
-  font-weight: 500;
+  margin: 1.5rem auto;
+  font-weight: 600;
   font-size: 30px;
+  line-height: 1;
 }
 
 h2 {
