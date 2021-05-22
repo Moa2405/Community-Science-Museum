@@ -3,17 +3,8 @@
   color: white;
   min-height: 33vh;
   background-image: url("../images/welcome-index2.jpg");
-  background-size: cover;
   background-position: right;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.welcome-content {
-  display: flex;
-  flex-direction: column;
-  /* align-items: center; */
+  width: 100vw;
 }
 
 .welcome-content h1 {
@@ -58,25 +49,15 @@
 }
 
 .cosmology {
+  width: 100vw;
   overflow: hidden;
   padding: 24px;
   color: white;
-  background: black;
   background-image: url("../images/cosmology/index-phone-cosmology.jpg");
-  background-size: cover;
 }
 
 .cosmology-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: space-evenly;
-}
-
-.cosmology-header {
-  display: flex;
-  flex-direction: column;
-  /* align-items: center; */
 }
 
 .cosmology-header h1,
@@ -98,14 +79,6 @@ h2 {
 
 .imax-content {
   margin: 1.5rem;
-  display: flex;
-  flex-direction: column;
-  /* align-items: center; */
-}
-
-h1.imax-header {
-  margin: 0;
-  font-family: var(--imax-font) Arial, Helvetica, sans-serif;
 }
 
 h1.imax-header {
@@ -127,17 +100,13 @@ h3.imax-movie {
 
 .kids-fun {
   background-image: url("/images/cosmology/kids-fun-imax.jpg");
-  background-size: cover;
-  /* position: absolute; */
   height: 170px;
   width: 170px;
-  /* left: 26px; */
   margin-left: 10px;
 }
 
-.space-craft {
+.space-craft-index {
   background-image: url("/images/cosmology/space-craft.png");
-  background-size: cover;
   width: 240px;
   height: 240px;
   left: 170px;
@@ -156,65 +125,20 @@ h3.imax-movie {
   }
 }
 
-.grid-sction-gradient-backround {
-  min-width: 100vw;
-  padding-top: 25px;
-  padding-bottom: 25px;
-  background: linear-gradient(
-    90deg,
-    rgba(166, 41, 133, 1) 49%,
-    rgba(3, 41, 115, 1) 100%
-  );
-}
-
-.grid-section {
-  max-width: 1400px;
-  width: 100%;
-  padding: 10px;
-  margin: 30px auto 30px auto;
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 20px;
-}
-
-.grid-card {
-  position: relative;
-  place-self: center;
-  background-color: black;
-  height: 280px;
-  width: 100%;
-}
-
-.grid-card-content {
-  position: absolute;
-  bottom: 0px;
-  padding: 15px;
-  background-color: rgba(247, 247, 247, 0.75);
-}
-
 .evolution {
   background-image: url("../images/grid-sction/dinoseur-trimed.jpg");
-  background-size: cover;
-  background-position: center;
 }
 .explore {
   background-image: url("/images/index-grid/vr-girl.jpg");
-  background-size: cover;
-  background-position: top;
 }
 .biology {
   background-image: url("/images/index-grid/biology-trimed.jpg");
-  background-size: cover;
 }
 .gift-shop {
   background-image: url("/images/index-grid/gift-shop-trimed.jpg");
-  background-size: cover;
-  background-position: center;
 }
 .ecology {
   background-image: url("/images/index-grid/ecology-trimed.jpg");
-  background-size: cover;
-  background-position: center;
 }
 
 .robotics-night {
@@ -227,9 +151,6 @@ h3.imax-movie {
 
 .robotics {
   place-self: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .robotics-header-wrapper {
@@ -244,25 +165,17 @@ h3.imax-movie {
 
 .robotics-img {
   background-image: url("/images/robotics&night/robot-trimed.png");
-  background-size: cover;
   height: 360px;
   width: 140px;
 }
 
 .night {
   background-color: black;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .night-content-wrapper {
   max-width: 400px;
   position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
 .night h1 {
@@ -290,16 +203,13 @@ h3.imax-movie {
 .night-img-1 {
   right: 37px;
   background-image: url("/images/night-at-the-museum/night-light-bowl.jpg");
-  background-size: cover;
 }
 .night-img-2 {
   left: -60px;
   top: 30px;
   background-image: url("/images/night-at-the-museum/dinosaur-hand.jpg");
-  background-size: cover;
 }
 .night-img-3 {
   left: 30px;
   background-image: url("/images/night-at-the-museum/night-at\ the\ museum-family.jpg");
-  background-size: cover;
 }

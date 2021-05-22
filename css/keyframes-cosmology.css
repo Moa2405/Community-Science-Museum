@@ -1,0 +1,36 @@
+@media (min-width: 900px) {
+  .space-craft {
+    animation: imax-space-craft-levitate 10s ease-in-out infinite;
+  }
+}
+@keyframes imax-space-craft-levitate {
+  0% {
+    margin-top: -100px;
+  }
+  50% {
+    margin-top: -40px;
+  }
+  100% {
+    margin-top: -100px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .space-craft {
+    margin-top: -320px;
+    animation: imax-space-craft-rotate 10s ease-in-out infinite;
+  }
+}
+@keyframes imax-space-craft-rotate {
+  0% {
+    transform: rotate(0);
+    margin-top: -320px;
+  }
+  50% {
+    margin-top: -60px;
+  }
+  100% {
+    transform: rotate(360deg);
+    margin-top: -320px;
+  }
+}

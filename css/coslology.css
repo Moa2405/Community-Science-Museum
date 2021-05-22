@@ -1,11 +1,16 @@
-.space {
+@import url("/css/keyframes-cosmology.css");
+
+.site-header-backroud {
   background-image: url("/images/cosmology/background-space.jpg");
   font-family: var(--cosmology-header), Arial, Helvetica, sans-serif;
 }
 
+.site-content-img {
+  background-image: url("/images/cosmology/earth-color.jpg");
+}
+
 .imax-header {
   background-image: url("/images/cosmology/nasa-Q1p7bh3SHj8-unsplash.jpg");
-  font-family: var(--imax-font), Arial, Helvetica, sans-serif;
   flex-direction: column;
   height: 200px;
 }
@@ -21,59 +26,45 @@
   letter-spacing: 20px;
 }
 
-.imax-wrapper {
-  max-width: 500px;
-  position: relative;
+.imax-image {
+  background-size: cover;
 }
 
-.imax-image {
-  position: absolute;
-  background-size: cover;
+.imax-subheader {
+  background-color: rgba(0, 0, 0, 0.5);
+  margin: 1.1rem;
+  text-transform: uppercase;
+  line-height: 1.1;
 }
 
 .kids {
   background-image: url("/images/cosmology/kids-fun-imax.jpg");
-  height: 120px;
-  width: 120px;
-  top: 170px;
-  left: 50px;
+  height: 250px;
+  width: 250px;
 }
 
 .space-craft {
+  margin-top: -40px;
+  display: none;
   background-image: url("/images/cosmology/space-craft.png");
   height: 120px;
   width: 120px;
-  top: 150px;
-  left: 160px;
   transform: rotate(22deg);
 }
 
+.imax-img-wrapper {
+  margin-top: 1.5rem;
+}
+
 .margin-top {
-  margin-top: 3.5rem;
+  margin-top: 5.5rem;
 }
 
 .grid-section-space {
+  margin: 1.5rem;
   display: grid;
   grid-template-columns: 1fr;
   gap: 20px;
-}
-
-.card-desktop {
-  display: none;
-}
-
-.grid-card-content {
-  height: 100%;
-}
-
-.card-phone {
-  color: white;
-  padding: 1.5rem;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
 }
 
 .card-phone h2 {

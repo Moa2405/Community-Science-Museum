@@ -1,0 +1,25 @@
+.site-header-backroud {
+  background-image: url("/images/explore/explore-header2-900.jpg");
+}
+
+.site-content-img {
+  background-image: url("/images/explore/vr-girl-uncutted.jpg");
+  height: 350px;
+}
+
+.italic {
+  font-style: italic;
+  font-weight: 600;
+}
+
+.for-kids {
+  background-image: url("/images/explore/kids-light-filter.jpg");
+}
+
+.for-teachers {
+  background-image: url("/images/explore/teacher-light-filter.jpg");
+}
+
+.for-resarchers {
+  background-image: url("/images/explore/albert-light-filter.jpg");
+}

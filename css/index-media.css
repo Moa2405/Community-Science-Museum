@@ -34,12 +34,46 @@
     grid-template-columns: 1fr 1fr;
   }
 
+  .site-content-img {
+    display: block;
+  }
+
+  .site-content-wrapper {
+    display: flex;
+    margin: 1.5rem;
+  }
+
+  .imax-img-wrapper {
+    order: 2;
+  }
+
   .grid-section {
     grid-template-columns: 1fr 1fr;
   }
-}
 
-@media (min-width: px) {
+  /* .for-kids {
+    grid-area: for-kids;
+  }
+
+  .for-teachers {
+    grid-area: for-teachers;
+  }
+
+  .for-resarchers {
+    grid-area: for-resarchers;
+  } */
+
+  .explore-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+    /* grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+      "for-kids for-teachers"
+      "for-kids for-resarchers"; */
+  }
+
+  .space-grid {
+    max-width: 650px;
+  }
 }
 
 @media (min-width: 900px) {
@@ -86,7 +120,7 @@
     grid-area: ecology;
   }
 
-  .grid-section {
+  .index-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -94,6 +128,11 @@
     grid-template-areas:
       "evolution evolution explore biology"
       "evolution evolution gift-shop ecology";
+  }
+
+  .space-grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    max-width: 2000px;
   }
 
   .robotics-night {
@@ -107,6 +146,36 @@
   .night h1 {
     font-size: 39px;
   }
+
+  .site-content {
+    max-width: 570px;
+  }
+
+  .imax-header {
+    height: 270px;
+  }
+
+  .imax-font-h1 {
+    font-size: 130px;
+  }
+
+  .imax-font-h2 {
+    margin-top: -15px;
+    margin-left: 59px;
+    letter-spacing: 52px;
+  }
+
+  .space-craft {
+    display: block;
+  }
+
+  .grid-card-content-button {
+    display: none;
+  }
+
+  .grid-card-content-link {
+    display: block;
+  }
 }
 
 @media (min-width: 1400px) {
@@ -115,13 +184,32 @@
   }
 
   .kids-fun {
-    height: 370px;
-    width: 370px;
+    height: 300px;
+    width: 300px;
   }
 
-  .space-craft {
-    width: 410px;
-    height: 380px;
-    left: 240px;
+  .space-craft-index {
+    width: 300px;
+    height: 300px;
+  }
+
+  .imax-header {
+    height: 360px;
+  }
+
+  .imax-font-h1 {
+    font-size: 200px;
+  }
+
+  .imax-font-h2 {
+    margin-top: -7px;
+    letter-spacing: 50px;
+    font-size: 70px;
+    margin-left: 60px;
+  }
+
+  .imax-subheader {
+    margin: 1.8rem;
+    letter-spacing: 11px;
   }
 }
