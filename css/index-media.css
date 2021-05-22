@@ -51,24 +51,8 @@
     grid-template-columns: 1fr 1fr;
   }
 
-  /* .for-kids {
-    grid-area: for-kids;
-  }
-
-  .for-teachers {
-    grid-area: for-teachers;
-  }
-
-  .for-resarchers {
-    grid-area: for-resarchers;
-  } */
-
-  .explore-grid {
+  .three-item-grid {
     grid-template-columns: 1fr 1fr 1fr;
-    /* grid-template-rows: 1fr 1fr;
-    grid-template-areas:
-      "for-kids for-teachers"
-      "for-kids for-resarchers"; */
   }
 
   .space-grid {
@@ -167,14 +151,23 @@
 
   .space-craft {
     display: block;
+    animation: imax-space-craft-levitate 10s ease-in-out infinite;
   }
 
   .grid-card-content-button {
     display: none;
   }
 
-  .grid-card-content-link {
+  .card-display-none {
     display: block;
+  }
+
+  .dark-filter {
+    background-color: unset;
+  }
+
+  footer {
+    flex-direction: row;
   }
 }
 
@@ -183,14 +176,24 @@
     min-height: 50vh;
   }
 
+  .space-craft {
+    margin-top: -320px;
+    animation: imax-space-craft-rotate 10s ease-in-out infinite;
+  }
+
   .kids-fun {
     height: 300px;
     width: 300px;
   }
 
   .space-craft-index {
-    width: 300px;
-    height: 300px;
+    width: 450px;
+    height: 450px;
+  }
+
+  .space-craft {
+    height: 220px;
+    width: 220px;
   }
 
   .imax-header {

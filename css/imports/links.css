@@ -6,8 +6,40 @@ header a {
   color: black;
 }
 
-.cta-primary {
+.cta {
+  margin-top: 0.6rem;
+  margin-bottom: 0.6rem;
+  font-weight: 600;
+  padding: 6px;
+  text-align: center;
+  display: inline-block;
   height: 37px;
   width: 113px;
-  background-color: #13f0d7;
+  padding-top: 9px;
+}
+
+.cta-primary {
+  color: black;
+  background-color: var(--green);
+}
+
+.cta-secondary {
+  color: #ffffff;
+  background-color: var(--purple);
+}
+
+.cta:hover {
+  transform: scale(1.1);
+}
+
+.grid-card-content-link {
+  color: #000000;
+  position: absolute;
+  bottom: 0px;
+  padding: 15px;
+  background-color: rgba(247, 247, 247, 0.75);
+}
+
+.grid-card-content-link:hover {
+  text-decoration: underline;
 }

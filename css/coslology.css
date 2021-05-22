@@ -1,5 +1,3 @@
-@import url("/css/keyframes-cosmology.css");
-
 .site-header-backroud {
   background-image: url("/images/cosmology/background-space.jpg");
   font-family: var(--cosmology-header), Arial, Helvetica, sans-serif;

@@ -7,45 +7,18 @@
   width: 100vw;
 }
 
-.welcome-content h1 {
+.welcome h1 {
   animation: header-opacity 4s;
-}
-
-@keyframes header-opacity {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
 }
 
 .welcome h2 {
   font-family: var(--primary-font), sans-serif;
   margin-bottom: 20px;
-  animation: sub-header-opacity 6s;
-}
-
-@keyframes sub-header-opacity {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
+  animation: header-opacity 6s;
 }
 
 .cta-fade-in {
-  animation: sub-header-opacity 8s;
-}
-
-@keyframes sub-header-opacity {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
+  animation: header-opacity 8s;
 }
 
 .cosmology {
@@ -63,12 +36,6 @@
 .cosmology-header h1,
 h2 {
   font-family: var(--cosmology-header), sans-serif;
-}
-
-.cosmology-header h1 {
-  background: linear-gradient(to right, #13f0d7 27%, #ffffff 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 
 .imax {
@@ -157,12 +124,6 @@ h3.imax-movie {
   width: 50%;
 }
 
-.robotics-header-wrapper h1 {
-  background: linear-gradient(to right, #a62985 0%, #032973 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
 .robotics-img {
   background-image: url("/images/robotics&night/robot-trimed.png");
   height: 360px;
@@ -171,6 +132,7 @@ h3.imax-movie {
 
 .night {
   background-color: black;
+  padding: 2rem;
 }
 
 .night-content-wrapper {
@@ -178,38 +140,34 @@ h3.imax-movie {
   position: relative;
 }
 
-.night h1 {
-  background: linear-gradient(to right, #13f0d7 0%, #ffffff 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.night h5 {
+.night p {
   color: white;
 }
 
 .night-images {
   margin-top: 20px;
   position: relative;
-  height: 190px;
+  height: 250px;
 }
 
 .night-img-card {
   position: absolute;
-  height: 136px;
-  width: 136px;
+  height: 180px;
+  width: 180px;
 }
 
 .night-img-1 {
-  right: 37px;
+  right: 0px;
+  top: 30px;
+  z-index: 1;
   background-image: url("/images/night-at-the-museum/night-light-bowl.jpg");
 }
 .night-img-2 {
-  left: -60px;
+  left: 0px;
   top: 30px;
   background-image: url("/images/night-at-the-museum/dinosaur-hand.jpg");
 }
 .night-img-3 {
-  left: 30px;
+  left: 100px;
   background-image: url("/images/night-at-the-museum/night-at\ the\ museum-family.jpg");
 }

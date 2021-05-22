@@ -1,5 +1,6 @@
 @import "imports/links.css";
 @import "imports/variables.css";
+@import "keyframes.css";
 
 * {
   padding: 0;
@@ -35,10 +36,14 @@ body {
 }
 
 h1 {
-  margin: 1.5rem auto;
+  /* margin: 1.5rem auto; */
   font-weight: 600;
   font-size: 30px;
   line-height: 1;
+}
+
+p {
+  margin-bottom: 0.6rem;
 }
 
 h2 {
@@ -59,6 +64,29 @@ header {
   align-items: center;
   justify-content: space-between;
   place-self: center;
+}
+
+.footer-backround-color {
+  background-color: #f7f7f7;
+  place-self: center;
+  width: 100vw;
+}
+
+footer {
+  max-width: 1400px;
+  padding: 24px;
+}
+
+footer i {
+  color: var(--purple);
+  margin-left: 20px;
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 10px;
+  margin: 1.6rem;
 }
 
 .logo i {
@@ -125,24 +153,24 @@ input[type="checkbox"] {
   justify-content: center;
 }
 
-.cta {
-  font-weight: 600;
-  padding: 6px;
+.text-align-center {
   text-align: center;
-  display: inline-block;
-  height: 37px;
-  width: 113px;
-  background-color: var(--green);
-  padding-top: 9px;
-}
-.cta-primary {
-  color: black;
-  background-color: var(--green);
 }
 
-.cta-secondary {
-  color: #ffffff;
-  background-color: var(--purple);
+.gradient-text-green {
+  background: linear-gradient(to right, #13f0d7 0%, #ffffff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gradient-text-purple-blue {
+  background: linear-gradient(to right, #a62985 0%, #032973 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.dark-filter {
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .site-header-backroud {
@@ -178,11 +206,7 @@ input[type="checkbox"] {
   margin: 1.5rem auto;
 }
 
-.site-content p {
-  margin-bottom: 0.6rem;
-}
-
-.grid-sction-gradient-backround {
+.grid-sction-gradient-backround-purple {
   min-width: 100vw;
   padding-top: 25px;
   padding-bottom: 25px;
@@ -190,6 +214,19 @@ input[type="checkbox"] {
     90deg,
     rgba(166, 41, 133, 1) 49%,
     rgba(3, 41, 115, 1) 100%
+  );
+}
+
+.grid-sction-gradient-backround-night {
+  min-width: 100vw;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 1) 4%,
+    rgba(19, 240, 215, 1) 50%,
+    rgba(0, 0, 0, 1) 92%
   );
 }
 
@@ -201,6 +238,10 @@ input[type="checkbox"] {
   display: grid;
   grid-template-columns: 1fr;
   gap: 20px;
+}
+
+.grid-section .img:hover {
+  transform: scale(1.02);
 }
 
 .grid-card-content-wrapper {
@@ -217,10 +258,6 @@ input[type="checkbox"] {
   justify-content: space-between;
 }
 
-.grid-card-content-link {
-  display: none;
-}
-
 .grid-card {
   background-position: center;
   position: relative;
@@ -233,26 +270,6 @@ input[type="checkbox"] {
   font-size: 25px;
 }
 
-.grid-card-content-link {
-  position: absolute;
-  bottom: 0px;
-  padding: 15px;
-  background-color: rgba(247, 247, 247, 0.75);
-}
-
-footer {
-  background-color: #f7f7f7;
-  padding: 24px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-}
-
-footer i {
-  color: var(--purple);
-  margin-left: 20px;
-}
-
-footer > * {
-  margin-bottom: 20px;
+.card-display-none {
+  display: none;
 }
