@@ -13,11 +13,11 @@
   display: none;
 }
 
-.welcome h1 {
+.header-fade-in {
   animation: header-opacity 4s;
 }
 
-.welcome h2 {
+.sub-header-fade-in {
   animation: header-opacity 6s;
 }
 
