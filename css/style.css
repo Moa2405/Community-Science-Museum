@@ -193,7 +193,7 @@ input[type="checkbox"] {
   background-size: cover;
   background-position: center;
   height: 290px;
-  width: 100vw;
+  width: 100%;
 }
 
 .site-content {
