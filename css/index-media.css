@@ -1,4 +1,23 @@
 @media (min-width: 600px) {
+  h1 {
+    font-size: 40px;
+    margin: 8px auto;
+  }
+
+  h2 {
+    font-size: 25px;
+    font-weight: 400;
+    margin: 8px auto;
+  }
+
+  h3 {
+    margin: 8px auto;
+  }
+
+  p {
+    margin: 8px auto;
+  }
+
   label {
     display: none;
   }
@@ -18,12 +37,12 @@
     padding: 6px;
   }
 
-  h1 {
-    font-size: 40px;
+  .welcome-display-w600 {
+    display: contents;
   }
 
-  h2 {
-    font-size: 25px;
+  .site-header {
+    font-size: 40px;
   }
 
   .three-d-experience {
@@ -61,12 +80,12 @@
 }
 
 @media (min-width: 900px) {
-  h1 {
+  .site-header {
     font-size: 70px;
   }
 
   .cosmology {
-    background-image: url("/images/cosmology/nasa-Q1p7bh3SHj8-unsplash.jpg");
+    background-image: url("/images/cosmology/imax-banner-w900.jpg");
     background-position: center;
   }
 
@@ -80,6 +99,7 @@
   }
 
   .three-d-experience {
+    margin-left: 25%;
     grid-area: three-d-experience;
   }
   .imax {
@@ -114,6 +134,18 @@
       "evolution evolution gift-shop ecology";
   }
 
+  .cosmology-header-background {
+    background-image: url("/images/cosmology/background-spacew900.jpg");
+  }
+
+  .imax-header-background {
+    background-image: url("/images/cosmology/imax-banner-w900.jpg");
+  }
+
+  .night-header-background {
+    background-image: url("/images/night-at-the-museum/night-banner3.jpg");
+  }
+
   .space-grid {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     max-width: 2000px;
@@ -135,8 +167,8 @@
     max-width: 570px;
   }
 
-  .imax-header {
-    height: 270px;
+  .imax-header-background {
+    height: 380px;
   }
 
   .imax-font-h1 {
@@ -171,6 +203,12 @@
   }
 }
 
+@media (min-width: 1200px) {
+  .welcome-cosmology-wrapper {
+    width: 50%;
+  }
+}
+
 @media (min-width: 1400px) {
   .welcome {
     min-height: 50vh;
@@ -194,6 +232,9 @@
   .space-craft {
     height: 220px;
     width: 220px;
+  }
+  .imax-header-background {
+    height: 470px;
   }
 
   .imax-header {

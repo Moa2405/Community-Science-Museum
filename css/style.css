@@ -27,6 +27,10 @@
   font-family: var(--imax-font), Arial, Helvetica, sans-serif;
 }
 
+.cosmology-font {
+  font-family: var(--cosmology-header), Arial, Helvetica, sans-serif;
+}
+
 body {
   font-family: var(--primary-font), Arial, Helvetica, sans-serif;
   min-height: 100vh;
@@ -36,20 +40,25 @@ body {
 }
 
 h1 {
-  /* margin: 1.5rem auto; */
-  font-weight: 600;
-  font-size: 30px;
-  line-height: 1;
-}
-
-p {
-  margin-bottom: 0.6rem;
+  font-size: 35px;
+  margin: 8px auto;
 }
 
 h2 {
+  font-size: 25px;
   font-weight: 400;
-  font-size: 18px;
-  line-height: 22px;
+  margin: 8px auto;
+}
+
+h3 {
+  margin: 8px auto;
+}
+
+p {
+  margin: 8px auto;
+}
+
+h2 {
 }
 
 header .active {
@@ -173,7 +182,7 @@ input[type="checkbox"] {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-.site-header-backroud {
+.site-banner {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -201,9 +210,6 @@ input[type="checkbox"] {
 }
 
 .site-content h2 {
-  font-weight: 600;
-  font-size: 1.2em;
-  margin: 1.5rem auto;
 }
 
 .grid-sction-gradient-backround-purple {
@@ -221,12 +227,12 @@ input[type="checkbox"] {
   min-width: 100vw;
   padding-top: 25px;
   padding-bottom: 25px;
-  background: rgb(0, 0, 0);
+  background: rgb(3, 41, 115);
   background: linear-gradient(
     90deg,
-    rgba(0, 0, 0, 1) 4%,
-    rgba(19, 240, 215, 1) 50%,
-    rgba(0, 0, 0, 1) 92%
+    rgba(3, 41, 115, 1) 0%,
+    rgba(19, 240, 215, 1) 53%,
+    rgba(3, 41, 115, 1) 100%
   );
 }
 
