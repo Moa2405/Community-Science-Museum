@@ -5,7 +5,7 @@
   }
 
   h2 {
-    font-size: 25px;
+    font-size: 40px;
     font-weight: 400;
     margin: 8px auto;
   }
@@ -85,30 +85,10 @@
   }
 
   .cosmology {
-    background-image: url("/images/cosmology/imax-banner-w900.jpg");
-    background-position: center;
-  }
-
-  .imax-content {
-    grid-area: imax-content;
-  }
-
-  .kids-fun {
-    height: 220px;
-    width: 220px;
-  }
-
-  .three-d-experience {
-    margin-left: 25%;
-    grid-area: three-d-experience;
-  }
-  .imax {
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: "imax-content three-d-experience";
+    grid-area: cosmology;
   }
 
   .evolution {
-    height: 568px;
     grid-area: evolution;
   }
   .explore {
@@ -125,13 +105,13 @@
   }
 
   .index-grid {
+    max-width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 10px 10px;
+    gap: 2em;
     grid-template-areas:
-      "evolution evolution explore biology"
-      "evolution evolution gift-shop ecology";
+      "explore explore cosmology cosmology"
+      "evolution biology ecology gift-shop";
   }
 
   .cosmology-header-background {
