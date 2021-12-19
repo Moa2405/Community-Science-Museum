@@ -72,6 +72,11 @@ header {
   align-items: center;
   justify-content: space-between;
   place-self: center;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+main {
+  margin-top: 3em;
 }
 
 .footer-backround-color {
@@ -218,53 +223,31 @@ input[type="checkbox"] {
   min-width: 100%;
   padding-top: 25px;
   padding-bottom: 25px;
-  background: rgb(3, 41, 115);
-  background: linear-gradient(
-    90deg,
-    rgba(3, 41, 115, 1) 0%,
-    rgba(19, 240, 215, 1) 53%,
-    rgba(3, 41, 115, 1) 100%
-  );
 }
 
 .grid-section {
-  max-width: 1400px;
   width: 100%;
+  max-width: 1100px;
   padding: 10px;
-  margin: 30px auto 30px auto;
+  margin: 30px auto;
   display: grid;
   grid-template-columns: 1fr;
   gap: 20px;
 }
 
-.grid-section .img:hover {
-  transform: scale(1.02);
-}
-
-.grid-card-content-wrapper {
+.grid-img {
+  position: absolute;
   height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 
-.grid-card-content-button {
-  color: white;
-  padding: 1.5rem;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.grid-card {
-  position: relative;
+.img-wrapper {
   min-height: 200px;
   aspect-ratio: 1 / 1;
+  position: relative;
 }
 
 .grid-card-content-button h2 {
   font-size: 25px;
-}
-
-.card-display-none {
-  display: none;
 }

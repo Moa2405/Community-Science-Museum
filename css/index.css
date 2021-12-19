@@ -1,53 +1,13 @@
-.welcome-cosmology-wrapper {
-  color: #ffffff;
-  padding: 1.6rem;
-  width: 80%;
-}
-
-.index-section-container {
-  object-fit: cover;
-  background-repeat: no-repeat;
-  width: 100%;
-  aspect-ratio: 3 / 2;
-  display: grid;
-  place-items: center;
-  max-height: 750px;
-}
-
 .welcome-background {
   background-image: url("../images/index/welcome-index2.jpg");
   background-position: right;
 }
 
-/* .welcome-display-w600 {
-  display: none;
-} */
-
-.header-fade-in {
-  animation: header-opacity 4s;
-}
-
-.sub-header-fade-in {
-  animation: header-opacity 6s;
-}
-
-.cta-fade-in {
-  animation: header-opacity 8s;
-}
-
-.index-grid-img {
+.grid-img {
   position: absolute;
   height: 100%;
   width: 100%;
   object-fit: cover;
-}
-
-.robotics-night {
-  margin: auto;
-  max-width: 1400px;
-  width: 100%;
-  display: grid;
-  grid-template-columns: 1fr;
 }
 
 .robotics {
@@ -64,9 +24,21 @@
   width: 140px;
 }
 
+.index-grid {
+  width: 100%;
+  max-width: 750px;
+  padding: 1em;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1em;
+  place-items: center;
+  margin: 0 auto;
+}
+
 .night {
   background-color: black;
-  padding: 2rem;
+  padding: 3rem;
+  width: 100%;
 }
 
 .night-content-wrapper {
@@ -91,17 +63,12 @@
 }
 
 .night-img-1 {
-  right: 0px;
-  top: 30px;
-  z-index: 1;
-  background-image: url("/images/night-at-the-museum/night-light-bowl.jpg");
+  min-width: 100px;
+  aspect-ratio: 3 / 3;
 }
-.night-img-2 {
-  left: 0px;
-  top: 30px;
-  background-image: url("/images/night-at-the-museum/dinosaur-hand.jpg");
-}
-.night-img-3 {
-  left: 100px;
-  background-image: url("/images/night-at-the-museum/night-at\ the\ museum-family.jpg");
+
+.new-img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }

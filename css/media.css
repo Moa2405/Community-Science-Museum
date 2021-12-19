@@ -77,19 +77,9 @@
   .space-grid {
     max-width: 650px;
   }
-}
-
-@media (min-width: 900px) {
-  .site-header {
-    font-size: 70px;
-  }
 
   .cosmology {
     grid-area: cosmology;
-  }
-
-  .evolution {
-    grid-area: evolution;
   }
   .explore {
     grid-area: explore;
@@ -103,15 +93,41 @@
   .ecology {
     grid-area: ecology;
   }
+  .robotics {
+    grid-area: robotics;
+  }
+  .night {
+    grid-area: night;
+  }
 
   .index-grid {
-    max-width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 2em;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 3em;
     grid-template-areas:
-      "explore explore cosmology cosmology"
-      "evolution biology ecology gift-shop";
+      "robotics  robotics"
+      " explore cosmology"
+      "biology ecology"
+      "night night"
+      "gift-shop gift-shop";
+  }
+}
+
+@media (min-width: 900px) {
+  .site-header {
+    font-size: 70px;
+  }
+
+  .index-grid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    column-gap: 4em;
+    place-items: center;
+    grid-template-areas:
+      "robotics robotics"
+      " explore cosmology"
+      "biology ecology"
+      "night night"
+      "gift-shop .";
   }
 
   .cosmology-header-background {
